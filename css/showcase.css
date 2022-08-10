@@ -1,0 +1,196 @@
+        .showcase {
+            background: #241814;
+            padding: 0 auto;
+            padding: 11.0625rem 0 0 0;
+            color: white;
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            font-family: 'Merriweather';
+            font-style: normal;
+        }
+        
+        .showcase-header {
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.5rem;
+            padding: 0.1875rem 0 3.125rem 8%;
+            z-index: 3;
+        }
+        
+        .showcase-button {
+            margin: 1.5rem 0.625rem 4.375rem 8%;
+            width: 18.5rem;
+            height: 3.75rem;
+            cursor: pointer;
+            border-radius: 7.5rem;
+            padding-top: 1.36rem;
+            padding-left: 2.4rem;
+            font-weight: 300;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            border: 0.0625rem solid#ffffff;
+        }
+        
+        .showcase-firstletter {
+            position: absolute;
+            margin: -23.8rem 0 0 8%;
+            font-weight: 700;
+            font-size: 9rem;
+            line-height: 11.3125rem;
+            color: rgba(119, 116, 116, 0.4);
+            z-index: 1;
+        }
+        
+        .showcase-border {
+            border-top: 0.0625rem solid #ffffff;
+            position: absolute;
+            margin: -15.75rem 0 0 44rem;
+            width: 50%;
+        }
+        
+        .showcase-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 8% 0 8%
+        }
+        
+        .flower-type {
+            width: 30%;
+            background-color: #241814;
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.125rem;
+            line-height: 2.625rem;
+            margin: 0 0 4.125rem 0;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 94.375rem) {
+            .showcase-border {
+                margin: -15.75rem 0 0 42.75rem;
+                width: 44%;
+            }
+        }
+        
+        @media (max-width: 85.375rem) {
+            .showcase-border {
+                margin: -15.75rem 0 0 42.75rem;
+                width: 39%;
+            }
+        }
+        
+        @media (max-width: 75rem) {
+            .showcase-border {
+                margin: -15.75rem 0 0 42.75rem;
+                width: 34%;
+            }
+        }
+        
+        @media (max-width: 69.375rem) {
+            .showcase-border {
+                margin: -15.75rem 0 0 42.75rem;
+                width: 28%;
+            }
+        }
+        
+        @media (max-width: 63.75rem) {
+            .flower-text {
+                font-size: 1.125rem;
+                line-height: 1.625rem;
+            }
+            .showcase-border {
+                margin: -15.75rem 0 0 42.75rem;
+                width: 20%;
+            }
+        }
+        
+        @media (max-width: 56.25rem) {
+            .showcase-border {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 47.5rem) {
+            .showcase-menu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin: 0 8% 0 8%
+            }
+            .flower-type {
+                width: 30%;
+                background-color: #241814;
+                font-family: 'Merriweather';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.125rem;
+                line-height: 2.625rem;
+            }
+            .flower-text {
+                font-size: 1.125rem;
+                line-height: 1.625rem;
+            }
+            .showcase-border {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 40rem) {
+            .showcase-menu {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 8% 0 8%;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            .flower-type {
+                width: 45%;
+                background-color: #241814;
+                font-family: 'Merriweather';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.125rem;
+                line-height: 2.625rem;
+            }
+            .flower-text {
+                font-size: 1rem;
+                line-height: 1.625rem;
+            }
+            .showcase-border {
+                display: none;
+            }
+            .showcase-firstletter {
+                position: absolute;
+                margin: -21.5rem 0 0 8%;
+                font-weight: 700;
+                font-size: 7rem;
+                line-height: 8.3125rem;
+                color: rgba(119, 116, 116, 0.4);
+                z-index: 1;
+            }
+        }
+        
+        @media (max-width: 32.5rem) {
+            .showcase-header {
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                padding: 0.1875rem 0 1.625rem 8%;
+            }
+            .showcase-border {
+                display: none;
+            }
+            .showcase-firstletter {
+                position: absolute;
+                margin: -18.35rem 0 0 8%;
+                font-weight: 700;
+                font-size: 5.1rem;
+                line-height: 6.5rem;
+                color: rgba(119, 116, 116, 0.4);
+                z-index: 1;
+            }
+        }
