@@ -1,186 +1,151 @@
-        @import url("./variables.css");
-        .showcase {
-            background: var(--showcaseBackground);
-            color: var(--textColor);
-            font-size: 1.25rem;
-            line-height: 1.25rem;
-            font-family: 'Merriweather';
-            font-style: normal;
+    @import url("./variables.css");
+    .showcase {
+        background: var(--showcaseBackground);
+        color: var(--textColor);
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        font-family: 'Merriweather';
+        font-style: normal;
+    }
+    
+    .showcase__wrapper {
+        max-width: 75.625rem;
+        margin: 0 auto;
+        padding: 12rem 0 0 0;
+    }
+    
+    .showcase__block {
+        display: flex;
+    }
+    
+    .showcase__block_header {
+        position: relative;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        padding: 0 0 3.125rem 0;
+        z-index: 3;
+        margin: 0 0 1.5rem 0;
+        width: 65rem;
+    }
+    
+    .showcase__block_firstletter {
+        position: absolute;
+        margin: -9.5rem 0 0 0;
+        font-weight: 700;
+        font-size: 9rem;
+        line-height: 11.3125rem;
+        color: var(--letterColor);
+        z-index: 1;
+    }
+    
+    .showcase__block_border {
+        border-top: 0.0625rem solid var(--textColor);
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+    
+    .showcase__button {
+        margin: 0 0.625rem 4.375rem 0;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 7.5rem;
+        padding: 1.7rem 3.4rem 1.7rem 3.4rem;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        border: 0.0625rem solid var(--textColor);
+    }
+    
+    .showcase__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .showcase__menu_item {
+        background-color: var(--showcaseBackground);
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.125rem;
+        line-height: 2.625rem;
+        margin: 0 0 4.125rem 0;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 1366px) {
+        .showcase__wrapper {
+            padding: 12rem 6rem 0 6rem;
         }
-        
-        .showcase-wrapper {
-            max-width: 75.625rem;
-            margin: 0 auto;
-            padding: 12rem 0 0 0;
+        .showcase__block_header {
+            width: 75rem;
         }
-        
-        .showcase-block {
-            display: flex;
+    }
+    
+    @media (max-width: 1020px) {
+        .showcase__menu_item_text {
+            font-size: 1.125rem;
+            line-height: 1.625rem;
         }
-        
-        .showcase-header {
-            position: relative;
-            font-weight: 700;
-            font-size: 3rem;
-            line-height: 3.5rem;
-            padding: 0 0 3.125rem 0;
-            z-index: 3;
-            margin: 0 0 1.5rem 0;
-            width: 65rem;
+        .showcase__wrapper {
+            padding: 12rem 3rem 0 3rem;
         }
-        
-        .showcase-firstletter {
-            position: absolute;
-            margin: -9.5rem 0 0 0;
-            font-weight: 700;
-            font-size: 9rem;
-            line-height: 11.3125rem;
-            color: var(--letterColor);
-            z-index: 1;
+        .showcase__block_header {
+            width: 85rem;
         }
-        
-        .showcase-border {
-            border-top: 0.0625rem solid var(--textColor);
-            width: 100%;
-            margin: 2rem 0 0 0;
+    }
+    
+    @media (max-width: 900px) {
+        .showcase__block_header {
+            width: 120rem;
         }
-        
-        .showcase-button {
-            margin: 0 0.625rem 4.375rem 0;
-            width: 18.5rem;
-            height: 3.75rem;
-            cursor: pointer;
-            border-radius: 7.5rem;
-            padding: 1.36rem 0 0 2.4rem;
-            font-weight: 300;
-            font-size: 1.5rem;
-            line-height: 2rem;
-            border: 0.0625rem solid var(--textColor);
+    }
+    
+    @media (max-width: 760px) {
+        .showcase__block_border {
+            display: none;
         }
-        
-        .showcase-menu {
-            display: grid;
-            grid-template-columns: 31% 31% 31%;
-            gap: 4%;
+        .showcase__wrapper {
+            padding: 12rem 2rem 0 2rem;
         }
-        
-        .showcase-menu-item {
-            background-color: var(--showcaseBackground);
-            font-family: 'Merriweather';
-            font-style: normal;
+    }
+    
+    @media (max-width: 640px) {
+        .showcase__menu_item_text {
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width: 530px) {
+        .showcase__block_header {
             font-weight: 400;
-            font-size: 2.125rem;
-            line-height: 2.625rem;
-            margin: 0 0 4.125rem 0;
-            cursor: pointer;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            padding: 1rem 0 1.625rem 0;
         }
-        
-        @media (max-width: 1366px) {
-            .showcase-wrapper {
-                padding: 12rem 6rem 0 6rem;
-            }
-            .showcase-header {
-                width: 75rem;
-            }
+        .showcase__blcok_border {
+            display: none;
         }
-        
-        @media (max-width: 1020px) {
-            .showcase-menu-text {
-                font-size: 1.125rem;
-                line-height: 1.625rem;
-            }
-            .showcase-wrapper {
-                margin: 0 auto;
-                padding: 12rem 3rem 0 3rem;
-            }
-            .showcase-header {
-                width: 85rem;
-            }
+        .showcase__block_firstletter {
+            margin: -5.6rem 0 0 0;
+            font-size: 5.1rem;
+            line-height: 6.5rem;
         }
-        
-        @media (max-width: 900px) {
-            .showcase-wrapper {
-                margin: 0 auto;
-                padding: 12rem 3rem 0 3rem;
-            }
-            .showcase-header {
-                width: 120rem;
-            }
+        .showcase__wrapper {
+            margin: 0 auto;
+            padding: 12rem 2rem 0 2rem;
         }
-        
-        @media (max-width: 760px) {
-            .showcase-menu-item {
-                background-color: var(--showcaseBackground);
-                font-family: 'Merriweather';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 2.125rem;
-                line-height: 2.625rem;
-            }
-            .showcase-menu-text {
-                font-size: 1.125rem;
-                line-height: 1.625rem;
-            }
-            .showcase-border {
-                display: none;
-            }
-            .showcase-wrapper {
-                margin: 0 auto;
-                padding: 12rem 2rem 0 2rem;
-            }
+        .showcase__button {
+            padding: 1.3rem 2.4rem 1.3rem 2.4rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
         }
-        
-        @media (max-width: 640px) {
-            .showcase-menu-item {
-                background-color: var(--showcaseBackground);
-                font-family: 'Merriweather';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 2.125rem;
-                line-height: 2.625rem;
-            }
-            .showcase-menu-text {
-                font-size: 1rem;
-                line-height: 1.625rem;
-            }
-            .showcase-border {
-                display: none;
-            }
-            .showcase-wrapper {
-                margin: 0 auto;
-                padding: 12rem 2rem 0 2rem;
-            }
+    }
+    
+    @media (max-width: 460px) {
+        .showcase__menu {
+            grid-template-columns: 5fr 5fr;
+            gap: 2rem;
         }
-        
-        @media (max-width: 530px) {
-            .showcase-header {
-                font-weight: 400;
-                font-size: 1.4rem;
-                line-height: 1.9rem;
-                padding: 1rem 0 1.625rem 0;
-            }
-            .showcase-border {
-                display: none;
-            }
-            .showcase-firstletter {
-                position: absolute;
-                margin: -5.6rem 0 0 0;
-                font-weight: 700;
-                font-size: 5.1rem;
-                line-height: 6.5rem;
-                color: var(--letterColor);
-                z-index: 1;
-            }
-            .showcase-wrapper {
-                margin: 0 auto;
-                padding: 12rem 2rem 0 2rem;
-            }
-        }
-        
-        @media (max-width: 460px) {
-            .showcase-menu {
-                display: grid;
-                grid-template-columns: 46% 46%;
-                gap: 4%;
-            }
-        }
+    }
