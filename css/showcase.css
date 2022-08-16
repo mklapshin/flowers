@@ -1,0 +1,150 @@
+    @import url("./variables.css");
+    .showcase {
+        background: var(--showcaseBackground);
+        color: var(--textColor);
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        font-family: 'Merriweather';
+        font-style: normal;
+    }
+    
+    .showcase__wrapper {
+        max-width: 75.625rem;
+        margin: 0 auto;
+        padding: 12rem 0 0 0;
+    }
+    
+    .showcase__block {
+        display: flex;
+    }
+    
+    .showcase__header {
+        position: relative;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        padding: 0 0 3.125rem 0;
+        z-index: 3;
+        margin: 0 0 1.5rem 0;
+        width: 65rem;
+    }
+    
+    .showcase__block_firstletter {
+        position: absolute;
+        margin: -9.5rem 0 0 0;
+        font-weight: 700;
+        font-size: 9rem;
+        line-height: 11.3125rem;
+        color: var(--letterColor);
+        z-index: 1;
+    }
+    
+    .showcase__border_white {
+        border-top: 0.0625rem solid var(--textColor);
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+    
+    .showcase__button_toSee {
+        margin: 0 0.625rem 4.375rem 0;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 7.5rem;
+        padding: 1.7rem 3.4rem 1.7rem 3.4rem;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        border: 0.0625rem solid var(--textColor);
+    }
+    
+    .showcase__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .showcase__menu_item {
+        background-color: var(--showcaseBackground);
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.125rem;
+        line-height: 2.625rem;
+        margin: 0 0 4.125rem 0;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 1366px) {
+        .showcase__wrapper {
+            padding: 12rem 6rem 0 6rem;
+        }
+        .showcase__header {
+            width: 75rem;
+        }
+    }
+    
+    @media (max-width: 1020px) {
+        .showcase__text {
+            font-size: 1.125rem;
+            line-height: 1.625rem;
+        }
+        .showcase__wrapper {
+            padding: 12rem 3rem 0 3rem;
+        }
+        .showcase__header {
+            width: 85rem;
+        }
+    }
+    
+    @media (max-width: 900px) {
+        .showcase__header {
+            width: 120rem;
+        }
+    }
+    
+    @media (max-width: 760px) {
+        .showcase__border_white {
+            display: none;
+        }
+        .showcase__wrapper {
+            padding: 12rem 2rem 0 2rem;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        .showcase__text {
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width: 530px) {
+        .showcase__header {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            padding: 1rem 0 1.625rem 0;
+        }
+        .showcase__border_white {
+            display: none;
+        }
+        .showcase__block_firstletter {
+            margin: -5.6rem 0 0 0;
+            font-size: 5.1rem;
+            line-height: 6.5rem;
+        }
+        .showcase__wrapper {
+            margin: 0 auto;
+            padding: 12rem 2rem 0 2rem;
+        }
+        .showcase__button_toSee {
+            padding: 1.3rem 2.4rem 1.3rem 2.4rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 460px) {
+        .showcase__menu {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
